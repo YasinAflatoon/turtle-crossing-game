@@ -34,10 +34,7 @@ while game_on:
 
     if player.ycor() >= 270:
         board.level_up()
-        for car in car_manager.all_cars:
-            car.goto(-320, -320)
-            car.hideturtle()
-        car_manager.all_cars.clear()
+        car_manager.reset()
         player.goto(0, -280)
         game_speed *= 0.9
         if board.level % 10 == 0:
