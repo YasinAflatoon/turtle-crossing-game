@@ -1,7 +1,7 @@
 import random
 from turtle import Turtle
 
-COLORS = ["green", "blue", "red", "yellow", "purple", "orange"]
+COLORS = ["LimeGreen", "DeepSkyBlue4", "tomato3", "gold", "purple3", "orange"]
 
 
 class Car:
@@ -23,3 +23,9 @@ class Car:
     def move(self):
         for car in self.all_cars:
             car.forward(5)
+
+    def reset(self):
+        for car in self.all_cars:
+            car.goto(-320, -320)
+            car.hideturtle()
+        self.all_cars.clear()
