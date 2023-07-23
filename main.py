@@ -37,7 +37,5 @@ while game_on:
         car_manager.reset()
         player.goto(0, -280)
         game_speed *= 0.9
-        if board.level % 10 == 0:
-            car_manager.car_gen_rate += 1
 
 sc.exitonclick()
