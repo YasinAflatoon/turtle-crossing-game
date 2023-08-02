@@ -7,10 +7,9 @@ COLORS = ["LimeGreen", "DeepSkyBlue4", "tomato3", "gold", "purple3", "orange"]
 class Car:
     def __init__(self):
         self.all_cars = []
-        self.car_gen_rate = 1
 
     def create_car(self):
-        if random.randint(1, 6) <= self.car_gen_rate:
+        if random.randint(1, 6) == 1:
             car = Turtle()
             car.penup()
             car.shape("square")
